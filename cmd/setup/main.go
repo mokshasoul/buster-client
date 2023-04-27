@@ -16,7 +16,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/dessant/open-golang/open"
+	"github.com/skratchdot/open-golang/open"
 
 	"buster-client/utils"
 )

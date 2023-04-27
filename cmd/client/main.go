@@ -11,7 +11,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/dessant/nativemessaging"
+	"github.com/qrtz/nativemessaging"
 
 	"buster-client/pkg/input"
 	"buster-client/utils"
@@ -52,9 +52,6 @@ func installClient(version string) error {
 		goos = "macos"
 	}
 	url := fmt.Sprintf("https://github.com/dessant/buster-client/releases/download/v%s/buster-client-setup-v%s-%s-%s", version, version, goos, runtime.GOARCH)
-	if goos == "windows" {
-		url += ".exe"
-	}
 
 	execPath, err := os.Executable()
 	if err != nil {

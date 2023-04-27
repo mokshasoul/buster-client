@@ -1,0 +1,10 @@
+go 1.20
+
+use (
+	./build/src/cmd/setup
+	./cmd/client
+	./lib/utils
+	./pkg/input
+)
+
+replace buster-client/utils => /Users/moksha/pws/github/buster-client/lib/utils
